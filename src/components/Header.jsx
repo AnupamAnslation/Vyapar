@@ -18,9 +18,9 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 font-medium text-gray-700">
           <Link href="/" className="hover:text-orange-600 transition">Home</Link>
-          <Link href="#" className="hover:text-orange-600 transition">Services</Link>
-          <Link href="#" className="hover:text-orange-600 transition">About</Link>
-          <Link href="#" className="hover:text-orange-600 transition">Contact</Link>
+          <Link href="/service" className="hover:text-orange-600 transition">Services</Link>
+          <Link href="/about" className="hover:text-orange-600 transition">About</Link>
+          <Link href="/contact" className="hover:text-orange-600 transition">Contact</Link>
         </nav>
 
         {/* Desktop Button */}
@@ -47,9 +47,9 @@ export default function Header() {
       >
         <div className="flex flex-col items-center gap-6 font-medium text-gray-700">
           <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link href="#" onClick={() => setMenuOpen(false)}>Services</Link>
-          <Link href="#" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="#" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link href="/service" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
           <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-full shadow-lg">
             Get Started
